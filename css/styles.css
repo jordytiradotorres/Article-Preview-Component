@@ -85,7 +85,8 @@ body {
     max-width: 675px;
     margin: 0 auto; } }
 .component__image > img {
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+  object-fit: cover; }
   @media (min-width: 748px) {
     .component__image > img {
       border-radius: 10px 0 0 10px;
