@@ -1,0 +1,17 @@
+.social {
+    cursor: pointer;
+    margin-top: 1em;
+
+    @media (min-width: 748px) {
+      margin-top: 0;
+    }
+
+    &__button {
+      display: inline-block;
+      border-radius: 50%;
+      padding: 0.5em;
+      background-color: $color-light-grayish-blue;
+      position: relative;
+      z-index: 10;
+    }
+  }

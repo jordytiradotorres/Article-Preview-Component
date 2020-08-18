@@ -1,0 +1,25 @@
+.avatar {
+  color: $color-very-dark-grayish-blue;
+  display: flex;
+  justify-content: flex-start;
+
+  &__image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__profile {
+    margin-left: 1em;
+
+    > h3 {
+      font-size: 1em;
+      margin-bottom: 0.2em;
+    }
+
+    > time {
+      font-size: 1em;
+      color: $color-desaturated-dark-blue;
+    }
+  }
+}
