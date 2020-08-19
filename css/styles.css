@@ -50,8 +50,8 @@ body {
   justify-content: flex-start; }
   .avatar__image {
     border-radius: 50%;
-    width: 40px;
-    height: 40px; }
+    width: 3.0769230769em;
+    height: 3.0769230769em; }
   .avatar__profile {
     margin-left: 1em; }
     .avatar__profile > h3 {
@@ -82,21 +82,21 @@ body {
 @media (min-width: 748px) {
   .component {
     display: flex;
-    max-width: 675px;
+    max-width: 51.9230769231em;
     margin: 0 auto; } }
 .component__image > img {
-  border-radius: 10px 10px 0 0;
+  border-radius: 0.7692307692em 0.7692307692em 0 0;
   object-fit: cover; }
   @media (min-width: 748px) {
     .component__image > img {
-      border-radius: 10px 0 0 10px;
+      border-radius: 0.7692307692em 0 0 0.7692307692em;
       min-height: 100%; } }
 .component__description {
   background-color: white;
-  border-radius: 0 0 10px 10px; }
+  border-radius: 0 0 0.7692307692em 0.7692307692em; }
   @media (min-width: 748px) {
     .component__description {
-      border-radius: 0 10px 10px 0; } }
+      border-radius: 0 0.7692307692em 0.7692307692em 0; } }
   .component__description h2 {
     color: #48556a;
     font-size: 1.3em;
@@ -140,8 +140,8 @@ body {
       left: 17em;
       top: -6em;
       bottom: 7em;
-      width: 225px;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+      width: 17.3076923077em;
+      box-shadow: 0 0.3846153846em 0.3846153846em rgba(0, 0, 0, 0.2); }
       .component .networks::after {
         content: '';
         position: absolute;
@@ -152,14 +152,14 @@ body {
         border-color: #48556a transparent transparent transparent; } }
   .component .networks__title {
     flex: 1;
-    letter-spacing: 6px;
+    letter-spacing: 0.4615384615em;
     font-weight: lighter;
     font-size: 0.8em; }
   .component .networks__list {
     display: flex;
     align-items: center;
     flex: 2;
-    height: 20px; }
+    height: 1.5384615385em; }
     @media (min-width: 748px) {
       .component .networks__list {
         padding-left: 1.5em; } }
@@ -167,9 +167,9 @@ body {
       margin-left: 1em; }
 .component .networks.networks-visible {
   display: flex;
-  border-radius: 0 0 10px 10px; }
+  border-radius: 0 0 0.7692307692em 0.7692307692em; }
   @media (min-width: 748px) {
     .component .networks.networks-visible {
-      border-radius: 10px; } }
+      border-radius: 0.7692307692em; } }
 
 /*# sourceMappingURL=styles.css.map */

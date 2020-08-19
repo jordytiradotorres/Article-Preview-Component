@@ -1,0 +1,6 @@
+@function pxToEm($px, $base: 13px) {
+  @if type-of($px) == number and unit($px) == 'px' {
+    @return ($px / $base) * 1em;
+  }
+  @return null;
+}

@@ -1,5 +1,6 @@
 @import './config/variables';
 @import './mixins/mixins';
+@import './functions/px-to-em';
 @import './config/base';
 @import './components/avatar';
 @import './components/social';
@@ -12,26 +13,26 @@
 .component {
   @include mq(medium) {
     display: flex;
-    max-width: 675px;
+    max-width: pxToEm(675px);
     margin: 0 auto;
   }
 
   &__image > img {
-    border-radius: 10px 10px 0 0;
+    border-radius: pxToEm(10px) pxToEm(10px) 0 0;
     object-fit: cover;
 
     @include mq(medium) {
-      border-radius: 10px 0 0 10px;
+      border-radius: pxToEm(10px) 0 0 pxToEm(10px);
       min-height: 100%;
     }
   }
 
   &__description {
     background-color: white;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 pxToEm(10px) pxToEm(10px);
 
     @include mq(medium) {
-      border-radius: 0 10px 10px 0;
+      border-radius: 0 pxToEm(10px) pxToEm(10px) 0;
     }
 
     h2 {
@@ -83,8 +84,8 @@
       left: 17em;
       top: -6em;
       bottom: 7em;
-      width: 225px;
-      box-shadow: 0 5px 5px rgba(#000, 0.2);
+      width: pxToEm(225px);
+      box-shadow: 0 pxToEm(5px) pxToEm(5px) rgba(#000, 0.2);
 
       &::after {
         content: '';
@@ -100,7 +101,7 @@
 
     &__title {
       flex: 1;
-      letter-spacing: 6px;
+      letter-spacing: pxToEm(6px);
       font-weight: lighter;
       font-size: 0.8em;
     }
@@ -109,7 +110,7 @@
       display: flex;
       align-items: center;
       flex: 2;
-      height: 20px;
+      height: pxToEm(20px);
 
       @include mq(medium) {
         padding-left: 1.5em;
@@ -122,9 +123,9 @@
   }
   .networks.networks-visible {
     display: flex;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 pxToEm(10px) pxToEm(10px);
     @include mq(medium) {
-      border-radius: 10px;
+      border-radius: pxToEm(10px);
     }
   }
 }
